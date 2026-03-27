@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Verify company certificates and reports issued by Delta Cert. Search our database of certified companies." />
+    <title>Verify Company Certificate - Delta Cert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-family: var(--font-primary);
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .verification-section {
+            padding: 80px 0;
+        }
+
+        .verification-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .verification-form {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 16px;
+            background: var(--white);
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .info-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .result-box {
+            display: none;
+            margin-top: 30px;
+            padding: 30px;
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        .result-box.show {
+            display: block;
+        }
+
+        .result-success {
+            border-left: 4px solid #28a745;
+        }
+
+        .result-error {
+            border-left: 4px solid #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page" class="site">
+        <!-- Header -->
+        <header id="ct-masthead">
+            <div id="ct-header-wrap" class="ct-header-layout fixed-height is-sticky">
+                <div id="ct-header-top" class="ct-header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-welcome">LEADERS IN ISO CERTIFICATION</div>
+                            <div class="ct-header-social">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="ct-header-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-branding">
+                                <a class="logo" href="../" title="Delta Cert">
+                                    <h1 class="logo-text">DELTA CERT</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ct-header" class="ct-header-main">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="ct-main-navigation">
+                                <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+                                <ul id="menu-main-menu" class="ct-main-menu">
+                                    <li class="menu-item"><a href="../">Home</a></li>
+                                    <li class="menu-item"><a href="../iso-standards/">Standards</a></li>
+                                    <li class="menu-item"><a href="../courses/">Training</a></li>
+                                    <li class="menu-item"><a href="../personal-certifications/">Personal Certifications</a></li>
+                                    <li class="menu-item"><a href="../about/">About</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Verify Company Certificate</h1>
+                <div class="breadcrumb">
+                    <a href="../">Home</a> / Verify Certificate
+                </div>
+            </div>
+        </div>
+
+        <!-- Verification Section -->
+        <section class="verification-section">
+            <div class="container">
+                <div class="verification-container">
+                    <div class="info-box">
+                        <h3><i class="fas fa-info-circle"></i> Certificate Verification</h3>
+                        <p>Enter the certificate number or company name to verify the authenticity of a Delta Cert certificate. This service allows you to confirm that a certificate is valid and has been issued by Delta Cert.</p>
+                    </div>
+
+                    <form class="verification-form" id="verificationForm">
+                        <div class="form-group">
+                            <label class="form-label" for="certificateNumber">Certificate Number</label>
+                            <input type="text" id="certificateNumber" class="form-input" placeholder="Enter certificate number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="companyName">Company Name (Optional)</label>
+                            <input type="text" id="companyName" class="form-input" placeholder="Enter company name">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="standard">ISO Standard (Optional)</label>
+                            <select id="standard" class="form-select">
+                                <option value="">Select Standard</option>
+                                <option value="iso9001">ISO 1234</option>
+                                <option value="iso14001">ISO 1234</option>
+                                <option value="iso45001">ISO 1234</option>
+                                <option value="iso27001">ISO 1234</option>
+                                <option value="iso22000">ISO 1234</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-search"></i> Verify Certificate
+                        </button>
+                    </form>
+
+                    <div class="result-box" id="resultBox">
+                        <div id="resultContent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">About Delta Cert</h3>
+                            <p>Delta Cert is a leading certification body providing internationally accredited certification services.</p>
+                        </div>
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <ul class="footer-menu">
+                                <li><a href="../about/">About Us</a></li>
+                                <li><a href="../courses/">Training Courses</a></li>
+                                <li><a href="../faq/">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Contact Us</h3>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-phone"></i> +1 234 567 1234</li>
+                                <li><i class="fas fa-envelope"></i> placeholder@placeholder.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Delta Cert. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('verificationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const resultBox = document.getElementById('resultBox');
+            const resultContent = document.getElementById('resultContent');
+            const certNumber = document.getElementById('certificateNumber').value;
+
+            // Simulate verification (in real implementation, this would call an API)
+            resultBox.classList.add('show');
+            
+            if (certNumber.length > 0) {
+                resultBox.className = 'result-box show result-success';
+                resultContent.innerHTML = `
+                    <h3 style="color: #28a745; margin-bottom: 15px;"><i class="fas fa-check-circle"></i> Certificate Verified</h3>
+                    <p><strong>Certificate Number:</strong> ${certNumber}</p>
+                    <p><strong>Status:</strong> Valid</p>
+                    <p><strong>Issued Date:</strong> January 15, 2025</p>
+                    <p><strong>Expiry Date:</strong> January 15, 2028</p>
+                    <p><strong>Company:</strong> Sample Company Ltd.</p>
+                    <p><strong>Standard:</strong> ISO 1234:2015</p>
+                    <p style="margin-top: 20px; color: #666;">This certificate is valid and has been issued by Delta Cert.</p>
+                `;
+            } else {
+                resultBox.className = 'result-box show result-error';
+                resultContent.innerHTML = `
+                    <h3 style="color: #dc3545; margin-bottom: 15px;"><i class="fas fa-times-circle"></i> Certificate Not Found</h3>
+                    <p>No certificate found with the provided information. Please verify the certificate number and try again.</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,7 +1,5 @@
 # Delta Cert Website
 
-A professional certification website built with modern HTML, CSS, and JavaScript. This is a fresh implementation inspired by Infinity Cert, featuring Delta Cert branding with a custom color scheme.
-
 ## Color Scheme
 
 - **Primary Color**: `#0e78d4` (Blue)

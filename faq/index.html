@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frequently asked questions about ISO certification, processes, fees, and audits. Get answers to your certification queries." />
+    <title>FAQ - Delta Cert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-family: var(--font-primary);
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .faq-section {
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item.active {
+            box-shadow: 0 5px 20px rgba(14, 120, 212, 0.1);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--text-dark);
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-question i {
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 30px 25px;
+            max-height: 1000px;
+        }
+
+        .faq-categories {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .faq-category-btn {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .faq-category-btn:hover,
+        .faq-category-btn.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--white);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page" class="site">
+        <!-- Header -->
+        <header id="ct-masthead">
+            <div id="ct-header-wrap" class="ct-header-layout fixed-height is-sticky">
+                <div id="ct-header-top" class="ct-header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-welcome">LEADERS IN ISO CERTIFICATION</div>
+                            <div class="ct-header-social">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="ct-header-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-branding">
+                                <a class="logo" href="../" title="Delta Cert">
+                                    <h1 class="logo-text">DELTA CERT</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ct-header" class="ct-header-main">
+                    <div class="container">
+                        <div class="row">
+                            <nav class="ct-main-navigation">
+                                <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+                                <ul id="menu-main-menu" class="ct-main-menu">
+                                    <li class="menu-item"><a href="../">Home</a></li>
+                                    <li class="menu-item"><a href="../iso-standards/">Standards</a></li>
+                                    <li class="menu-item"><a href="../courses/">Training</a></li>
+                                    <li class="menu-item"><a href="../personal-certifications/">Personal Certifications</a></li>
+                                    <li class="menu-item"><a href="../about/">About</a></li>
+                                    <li class="menu-item current-menu-item"><a href="./">FAQ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Frequently Asked Questions</h1>
+                <div class="breadcrumb">
+                    <a href="../">Home</a> / FAQ
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-categories">
+                        <button class="faq-category-btn active" data-category="all">All Questions</button>
+                        <button class="faq-category-btn" data-category="general">General</button>
+                        <button class="faq-category-btn" data-category="process">Certification Process</button>
+                        <button class="faq-category-btn" data-category="fees">Fees & Pricing</button>
+                        <button class="faq-category-btn" data-category="audit">Audits</button>
+                    </div>
+
+                    <div class="faq-list">
+                        <div class="faq-item active" data-category="general">
+                            <div class="faq-question">
+                                <span>What is ISO certification?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                ISO certification is a seal of approval from a third-party body that a company runs to one of the internationally recognized ISO management standards. It demonstrates that your organization has implemented a management system that meets the requirements of a specific ISO standard.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="process">
+                            <div class="faq-question">
+                                <span>How long does the certification process take?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                The certification process typically takes 3-6 months, depending on the size and complexity of your organization, the standard you're seeking, and how prepared your management system is. This includes the initial audit, any corrective actions needed, and the final certification decision.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="fees">
+                            <div class="faq-question">
+                                <span>How much does ISO certification cost?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Certification costs vary based on several factors including the size of your organization, number of employees, number of locations, complexity of operations, and the specific ISO standard. We provide customized quotes after understanding your specific requirements. Contact us for a detailed estimate.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="audit">
+                            <div class="faq-question">
+                                <span>What happens during an ISO audit?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                During an ISO audit, our certified auditors will review your management system documentation, interview staff, observe processes, and verify that your system meets the requirements of the ISO standard. The audit includes an opening meeting, on-site assessment, and a closing meeting with findings.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="general">
+                            <div class="faq-question">
+                                <span>Which ISO standard should my company get certified for?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                The ISO standard you should pursue depends on your industry, business objectives, and customer requirements. ISO 1234 (Quality Management) is the most common starting point. ISO 1234 (Environmental) is important for sustainability, ISO 1234 (Health & Safety) for workplace safety, and ISO 1234 (Information Security) for data protection. We can help you determine the best standards for your organization.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="process">
+                            <div class="faq-question">
+                                <span>Do I need to be certified in multiple ISO standards?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                While not required, many organizations choose to implement multiple ISO standards. The standards are designed to work together, and having multiple certifications can demonstrate comprehensive management excellence. Many companies start with ISO 1234 and then add other standards based on their needs.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="audit">
+                            <div class="faq-question">
+                                <span>How often do I need to be audited?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                After initial certification, you'll need surveillance audits annually (typically every 12 months) to maintain your certification. A full recertification audit is required every three years. These audits ensure your management system continues to meet ISO requirements and is being maintained effectively.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="fees">
+                            <div class="faq-question">
+                                <span>Are there ongoing costs after certification?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, there are ongoing costs including annual surveillance audit fees and the recertification audit fee every three years. These costs are typically lower than the initial certification fee. We provide transparent pricing and can discuss payment options.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="process">
+                            <div class="faq-question">
+                                <span>Can I prepare for certification myself or do I need a consultant?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                While it's possible to prepare yourself, many organizations benefit from working with a consultant or using our training courses. We offer training programs and can provide guidance throughout the process. However, the certification body (us) must remain independent and cannot provide consulting services to avoid conflicts of interest.
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="general">
+                            <div class="faq-question">
+                                <span>Is Delta Cert internationally recognized?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Yes, Delta Cert is an internationally accredited certification body. Our certifications are recognized globally and meet international standards. We maintain accreditation with relevant international accreditation bodies to ensure the highest level of credibility and recognition.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">About Delta Cert</h3>
+                            <p>Delta Cert is a leading certification body providing internationally accredited certification services.</p>
+                        </div>
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <ul class="footer-menu">
+                                <li><a href="../about/">About Us</a></li>
+                                <li><a href="../courses/">Training Courses</a></li>
+                                <li><a href="./">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Contact Us</h3>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-phone"></i> +1 234 567 1234</li>
+                                <li><i class="fas fa-envelope"></i> placeholder@placeholder.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Delta Cert. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // FAQ Category filtering
+        document.querySelectorAll('.faq-category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Update active button
+                document.querySelectorAll('.faq-category-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional personal certification programs. Get certified as an Example Training Course Course, or management system professional." />
+    <title>Personal Certifications - Delta Cert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-family: var(--font-primary);
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .certifications-section {
+            padding: 80px 0;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .cert-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .cert-card:hover {
+            box-shadow: 0 10px 30px rgba(14, 120, 212, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .cert-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 25px;
+        }
+
+        .cert-title {
+            font-family: var(--font-primary);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .cert-description {
+            color: var(--text-light);
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .cert-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .cert-features li {
+            padding: 8px 0;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cert-features li i {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page" class="site">
+        <!-- Header -->
+        <header id="ct-masthead">
+            <div id="ct-header-wrap" class="ct-header-layout fixed-height is-sticky">
+                <!-- Top Header -->
+                <div id="ct-header-top" class="ct-header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-welcome">
+                                LEADERS IN ISO CERTIFICATION
+                            </div>
+                            <div class="ct-header-social">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Header -->
+                <div id="ct-header-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-branding">
+                                <a class="logo" href="../" title="Delta Cert" rel="home">
+                                    <h1 class="logo-text">DELTA CERT</h1>
+                                </a>
+                            </div>
+                            <div class="ct-header-holder">
+                                <div class="ct-header-info-item">
+                                    <div class="h-item-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="h-item-meta">
+                                        <label>Call Us: +1 234 567 1234</label>
+                                        <span>WhatsApp: +1 234 567 1234</span>
+                                    </div>
+                                </div>
+                                <div class="ct-header-info-item">
+                                    <div class="h-item-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="h-item-meta">
+                                        <label>Mail us for help:</label>
+                                        <span>placeholder@placeholder.com</span>
+                                    </div>
+                                </div>
+                                <div class="ct-header-info-item">
+                                    <div class="h-item-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="h-item-meta">
+                                        <label>Head Office</label>
+                                        <span>1234 Placeholder Street, Placeholder City, PL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Navigation -->
+                <div id="ct-header" class="ct-header-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="ct-header-branding mobile">
+                                <a class="logo" href="../" title="Delta Cert">
+                                    <h1 class="logo-text">DELTA CERT</h1>
+                                </a>
+                            </div>
+                            <div class="ct-header-navigation">
+                                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <nav class="ct-main-navigation">
+                                    <ul id="menu-main-menu" class="ct-main-menu">
+                                        <li class="menu-item"><a href="../">Home</a></li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="../iso-standards/">Standards</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../iso-standards/iso-9001/">ISO 1234</a></li>
+                                                <li><a href="../iso-standards/iso-14001/">ISO 1234</a></li>
+                                                <li><a href="../iso-standards/iso-45001/">ISO 1234</a></li>
+                                                <li><a href="../iso-standards/iso-27001/">ISO 1234</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="../courses/">Training</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../courses/">All Courses</a></li>
+                                                <li><a href="../courses/Example Training Course</a></li>
+                                                <li><a href="../courses/lead-Example Training Course</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item current-menu-item"><a href="./">Personal Certifications</a></li>
+                                        <li class="menu-item"><a href="../sustainability/">Sustainability</a></li>
+                                        <li class="menu-item"><a href="../about/">About</a></li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="#">More</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../blog/">Blog</a></li>
+                                                <li><a href="../faq/">FAQ</a></li>
+                                                <li><a href="../downloads/">Downloads</a></li>
+                                                <li><a href="../contact/">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-actions">
+                                <button class="search-toggle" aria-label="Search">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <div class="verify-certificate-dropdown">
+                                    <button class="verify-btn">Verify Certificate <i class="fas fa-chevron-down"></i></button>
+                                    <ul class="verify-dropdown-menu">
+                                        <li><a href="../certified-company-search/">Verify Company Certificate</a></li>
+                                        <li><a href="../certified-personal-search/">Verify Personal Certificate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Personal Certifications</h1>
+                <div class="breadcrumb">
+                    <a href="../">Home</a> / Personal Certifications
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Certification Programs</h2>
+                    <p class="section-subtitle">Advance your career with internationally recognized personal certifications</p>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="cert-title">Example Training Course Certification</h3>
+                        <p class="cert-description">Become a certified Example Training Course and lead audit teams for ISO management system certifications.</p>
+                        <ul class="cert-features">
+                            <li><i class="fas fa-check"></i> Internationally recognized</li>
+                            <li><i class="fas fa-check"></i> Comprehensive training included</li>
+                            <li><i class="fas fa-check"></i> Valid for 3 years</li>
+                            <li><i class="fas fa-check"></i> Career advancement opportunities</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3 class="cert-title">Example Training Course Certification</h3>
+                        <p class="cert-description">Get certified as an Example Training Course to conduct internal audits within your organization.</p>
+                        <ul class="cert-features">
+                            <li><i class="fas fa-check"></i> Industry-standard certification</li>
+                            <li><i class="fas fa-check"></i> Practical audit skills</li>
+                            <li><i class="fas fa-check"></i> Valid for 3 years</li>
+                            <li><i class="fas fa-check"></i> Flexible training options</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="cert-title">Management System Professional</h3>
+                        <p class="cert-description">Certify your expertise in implementing and maintaining ISO management systems.</p>
+                        <ul class="cert-features">
+                            <li><i class="fas fa-check"></i> Multi-standard expertise</li>
+                            <li><i class="fas fa-check"></i> Implementation skills</li>
+                            <li><i class="fas fa-check"></i> Valid for 3 years</li>
+                            <li><i class="fas fa-check"></i> Professional recognition</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="site-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-widget">
+                            <h3 class="widget-title">About Delta Cert</h3>
+                            <p>Delta Cert is a leading certification body providing internationally accredited certification services.</p>
+                        </div>
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <ul class="footer-menu">
+                                <li><a href="../about/">About Us</a></li>
+                                <li><a href="../courses/">Training Courses</a></li>
+                                <li><a href="../faq/">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-widget">
+                            <h3 class="widget-title">Contact Us</h3>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-phone"></i> +1 234 567 1234</li>
+                                <li><i class="fas fa-envelope"></i> placeholder@placeholder.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Delta Cert. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
